@@ -9,13 +9,21 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "typescript": "^5.2.2",
+    "xstate": "4.37.2",
+    "xstate5": "npm:xstate@^5.1.0"
+  },
+  "'devDependencies'": {
+    "@xstate/cli": "^0.4.2",
+    "@xstate/inspect": "^0.8.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "node xstate5-react-script.js"
   },
   "eslintConfig": {
     "extends": [
